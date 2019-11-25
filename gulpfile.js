@@ -8,13 +8,15 @@ const gulp = require('gulp'),
       sass = require('gulp-sass'),
       sourcemaps = require('gulp-sourcemaps'),
       imagemin = require('gulp-imagemin'),
-      gulpPngquant = require('gulp-pngquant');
+      gulpPngquant = require('gulp-pngquant'),
+      babel = require('gulp-babel');
 
 
 const cssfiles = [
   './app/sass/reset.scss',
   './app/sass/vars.scss',
   './app/sass/main.scss',
+  './app/sass/mobileMenu.scss',
   './app/sass/media.scss'
 ]
 const jsfiles = [
@@ -34,6 +36,7 @@ function imageMinifi () {
 function sassCompile () {
   return gulp.src(cssfiles)
   .pipe(sass({outputStyle: 'compressed'}))
+  .pipe(sass().on('error', sass.logError))
   .pipe(concat('main.css'))
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
@@ -49,10 +52,13 @@ function sassCompile () {
 function scripts () {
   return gulp.src(jsfiles)
   .pipe(sourcemaps.init())
-  .pipe(concat('common.js'))
+  .pipe(babel({
+    presets: ["@babel/preset-env"]
+  }))
   .pipe(uglify({
     toplevel: true
   }))
+  .pipe(concat('common.js'))
   .pipe(sourcemaps.write())
   .pipe(gulp.dest('./dist/js'))
   .pipe(browserSync.stream())
@@ -69,7 +75,7 @@ function watch () {
     port: 9000
   })
   gulp.watch('./app/css/**/*.js', scripts)
-  gulp.watch('./sass/**/*.scss', sassCompile)
+  gulp.watch('./app/sass/**/*.scss', sassCompile)
   gulp.watch('./app/images/**/*', imageMinifi)
   gulp.watch('./*.html').on('change', browserSync.reload)
 }

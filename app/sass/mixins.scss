@@ -1,0 +1,24 @@
+@mixin reset-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@mixin container {
+  max-width: $width-container;
+  margin: 0 auto;
+}
+@mixin border-article ($width, $color, $color-hover) {
+  border: $width solid $color;
+  &:hover {
+    border: $width solid $color-hover;
+  }
+}
+@mixin  border-right-element ($top,  $left) {
+  position: absolute;
+  content: '';
+  top: $top;
+  right: $left;
+  height: 100%;
+  width: 1px;
+  background: $color-gray;
+}

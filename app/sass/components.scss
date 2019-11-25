@@ -1,0 +1,156 @@
+@import 'vars.scss';
+
+
+.modal {
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -60%);
+  background: $color-white;
+  visibility: hidden;
+  top: 50%;
+  transition: $transition-medium;
+  left: 50%;
+  opacity: 0;
+  position: fixed;
+  z-index: $zindex-lm;
+  &-overlay {
+    position: absolute;
+    z-index: $zindex-l;
+    content: '';
+    transition: $transition-medium;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    bottom: 0;
+    left: 0;
+    background: $color-text;
+    opacity: 0;
+    &_active {
+      opacity: .5;
+      visibility: visible;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    background: $color-accent;
+    border: none;
+    cursor: pointer;
+  }
+  &__icon {
+    margin: auto;
+  }
+  &_active {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: visible;
+
+  }
+}
+// button
+.btn {
+  @include reset-btn;
+  text-align: center;
+	text-decoration: none;
+  white-space: nowrap;
+  padding: 10px;
+  &_main {
+    @include reset-btn;
+    max-width: 320px;
+    color: $color-white;
+    background: $color-accent;
+    padding: 10px 30px;
+    transition: $transition-slow;
+    &:hover {
+      background: $color-white;
+      transform: translateY(-3px);
+    }
+  }
+  &_transparent {
+    background: transparent;
+    @include reset-btn;
+    padding: 10px 20px;
+    color: $color-accent;
+    transition: $transition-slow;
+    &:hover {
+      background: $color-white;
+      transform: translateY(-3px);
+    }
+  }
+}
+
+// form
+.form {
+  display: flex;
+  flex-direction: column;
+  &__line {
+    display: flex;
+  }
+  &__input {
+    width: 80%;
+    padding: 18px;
+    background: #E7E7E7;
+    border: none;
+    margin: 10px 0;
+  }
+}
+
+
+// help 
+.help {
+  position: relative;
+  .wrapper {
+    padding: 40px;
+    position: relative;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__text {
+    color: $color-text-second;
+    margin-bottom: 10px;
+  }
+  &__about {
+    text-transform: uppercase;
+    color: $color-text-second;
+    font-size: 10px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+  }
+}
+
+// article
+
+.article {
+  transition: $transition-fast;
+  @include border-article(1px, $color-gray, $color-accent);
+  &:hover {
+    transform: translateY(-10px);
+    background: $color-accent;
+    color: $color-white;
+    .article__description {
+      color: $color-white;
+    }
+    .article__button {
+      background: $color-white;
+      color: $color-accent;
+    }
+  }
+  &__description {
+    color: $color-text-second;
+    min-height: 100px;
+    margin-bottom: 15px;
+  }
+  &__title {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,25 @@
+// colors
+$color-accent: #E51E21;
+$color-text: #212121;
+$color-text-second: #585858;
+$color-light-accent: #FF8686;
+$color-gray: #E7E7E7;
+$color-white: #FFFFFF;
+
+// container
+$width-container: 1900px;
+
+// text / fonts
+$font-size: 17px;
+$font-family: 'PF DinDisplay Pro', 'sans-serif';
+
+// 
+$transition-fast: .3s cubic-bezier(0.19, 1, 0.22, 1);
+$transition-medium: .6s cubic-bezier(0.19, 1, 0.22, 1);
+$transition-slow: 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+// z index
+$zindex-s: 1;
+$zindex-m: 5;
+$zindex-l: 10;
+$zindex-lm: 15;

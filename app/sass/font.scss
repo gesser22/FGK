@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url('../font/PFDin/PFDinDisplayPro-BoldItalic.eot');
+  src: local('PFDinDisplayPro-BoldItalic'),
+      url('../font/PFDin/PFDinDisplayPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/PFDin/PFDinDisplayPro-BoldItalic.woff') format('woff'),
+      url('../font/PFDin/PFDinDisplayPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url('../font/PFDin/PFDinDisplayPro-BlackItalic.eot');
+  src: local('PFDinDisplayPro-BlackItalic'),
+      url('../font/PFDin/PFDinDisplayPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/PFDin/PFDinDisplayPro-BlackItalic.woff') format('woff'),
+      url('../font/PFDin/PFDinDisplayPro-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url('../font/PFDin/PFDinDisplayPro-Thin.eot');
+  src: local('PFDinDisplayPro-Thin'),
+      url('../font/PFDin/PFDinDisplayPro-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../font/PFDin/PFDinDisplayPro-Thin.woff') format('woff'),
+      url('../font/PFDin/PFDinDisplayPro-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url('../font/PFDin/PFDinDisplayPro-ThinItalic.eot');
+  src: local('PFDinDisplayPro-ThinItalic'),
+      url('../font/PFDin/PFDinDisplayPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/PFDin/PFDinDisplayPro-ThinItalic.woff') format('woff'),
+      url('../font/PFDin/PFDinDisplayPro-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url('../font/PFDin/PFDinDisplayPro-Italic.eot');
+  src: local('PFDinDisplayPro-Italic'),
+      url('../font/PFDin/PFDinDisplayPro-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../font/PFDin/PFDinDisplayPro-Italic.woff') format('woff'),
+      url('../font/PFDin/PFDinDisplayPro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url('../font/PFDin/PFDinDisplayPro-MediumItalic.eot');
+  src: local('PFDinDisplayPro-MediumItalic'),
+      url('../font/PFDin/PFDinDisplayPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/PFDin/PFDinDisplayPro-MediumItalic.woff') format('woff'),
+      url('../font/PFDin/PFDinDisplayPro-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url('../font/PFDin/PFDinDisplayPro-LightItalic.eot');
+  src: local('PFDinDisplayPro-LightItalic'),
+      url('../font/PFDin/PFDinDisplayPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/PFDin/PFDinDisplayPro-LightItalic.woff') format('woff'),
+      url('../font/PFDin/PFDinDisplayPro-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url('../font/PFDin/PFDinDisplayPro-Black.eot');
+  src: local('PFDinDisplayPro-Black'),
+      url('../font/PFDin/PFDinDisplayPro-Black.eot?#iefix') format('embedded-opentype'),
+      url('../font/PFDin/PFDinDisplayPro-Black.woff') format('woff'),
+      url('../font/PFDin/PFDinDisplayPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url('../font/PFDin/PFDinDisplayPro-Regular.eot');
+  src: local('PFDinDisplayPro-Regular'),
+      url('../font/PFDin/PFDinDisplayPro-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/PFDin/PFDinDisplayPro-Regular.woff') format('woff'),
+      url('../font/PFDin/PFDinDisplayPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url('../font/PFDin/PFDinDisplayPro-Light.eot');
+  src: local('PFDinDisplayPro-Light'),
+      url('../font/PFDin/PFDinDisplayPro-Light.eot?#iefix') format('embedded-opentype'),
+      url('../font/PFDin/PFDinDisplayPro-Light.woff') format('woff'),
+      url('../font/PFDin/PFDinDisplayPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url('../font/PFDin/PFDinDisplayPro-Bold.eot');
+  src: local('PFDinDisplayPro-Bold'),
+      url('../font/PFDin/PFDinDisplayPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/PFDin/PFDinDisplayPro-Bold.woff') format('woff'),
+      url('../font/PFDin/PFDinDisplayPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url('../font/PFDin/PFDinDisplayPro-Medium.eot');
+  src: local('PFDinDisplayPro-Medium'),
+      url('../font/PFDin/PFDinDisplayPro-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../font/PFDin/PFDinDisplayPro-Medium.woff') format('woff'),
+      url('../font/PFDin/PFDinDisplayPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
